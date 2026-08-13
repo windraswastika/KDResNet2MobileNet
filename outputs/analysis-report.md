@@ -128,13 +128,4 @@ narrative built around T=8.
   `raw/` filenames), so this remains a stated dataset limitation, not something these
   numbers can correct for.
 
-## What this changes for the manuscript
 
-The revision cannot be a like-for-like patch of the existing narrative — the corrected,
-properly-executed experiment does not reproduce the original submission's core result.
-The paper's contribution needs reframing around what the data actually shows: KD
-produces a *lightweight model with performance statistically indistinguishable from
-the teacher and comparable to a plain fine-tuned baseline*, not a model that beats the
-teacher or clearly benefits from knowledge transfer over simple fine-tuning. This is
-still a publishable, honest finding (compact model, no significant loss vs. teacher),
-but the "KD outperforms" and "higher T is better" framing must be removed, not softened.
