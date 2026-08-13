@@ -1,0 +1,38 @@
+{
+  "teacher_vs_student_kd": {
+    "wilcoxon": {
+      "statistic": 4.0,
+      "pvalue": 0.4375,
+      "effect_size_r": 0.42211588240886894,
+      "interpretation": "No statistically significant difference was detected (p=0.4375 >= 0.05). This does NOT establish equivalence; with n=5 paired seeds the minimum achievable p-value is 0.0312, so statistical power is limited. See TOST equivalence test for an equivalence claim."
+    },
+    "tost_equivalence": {
+      "pvalue": 0.04976791367777569,
+      "margin": 0.05,
+      "mean_diff": 0.014789209590811203,
+      "interpretation": "Equivalence confirmed within margin [-0.05, 0.05] (TOST p=0.0498 < 0.05, mean diff=0.0148)."
+    },
+    "variance_stability": {
+      "levene_statistic": 2.36335113254512,
+      "levene_pvalue": 0.16277103546309163,
+      "baseline_std": 0.056165433963031294,
+      "proposed_std": 0.020351985856870796
+    }
+  },
+  "student_baseline_vs_student_kd": {
+    "wilcoxon": {
+      "statistic": 5.0,
+      "pvalue": 0.625,
+      "effect_size_r": 0.3015113445777636,
+      "interpretation": "No statistically significant difference was detected (p=0.6250 >= 0.05). This does NOT establish equivalence; with n=5 paired seeds the minimum achievable p-value is 0.0312, so statistical power is limited. See TOST equivalence test for an equivalence claim."
+    }
+  },
+  "student_kd_nodenoise_vs_student_kd": {
+    "wilcoxon": {
+      "statistic": 4.0,
+      "pvalue": 0.4375,
+      "effect_size_r": 0.42211588240886894,
+      "interpretation": "No statistically significant difference was detected (p=0.4375 >= 0.05). This does NOT establish equivalence; with n=5 paired seeds the minimum achievable p-value is 0.0312, so statistical power is limited. See TOST equivalence test for an equivalence claim."
+    }
+  }
+}

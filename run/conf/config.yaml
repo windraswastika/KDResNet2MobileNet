@@ -1,0 +1,30 @@
+defaults:
+  - data: busi
+  - train: default
+  - _self_
+
+root_dir: raw
+checkpoint_dir: checkpoints
+output_dir: outputs
+
+# Split seed: FIXED across all evaluation seeds so the test set never
+# changes between runs (Reviewer E, point 2 — fixes the ambiguity in the
+# original manuscript between "seed=42 split" and "5 evaluation seeds").
+split_seed: 42
+
+# Evaluation seeds: control model init + dataloader shuffling only.
+seeds: [0, 1, 2, 3, 4]
+
+grid_search:
+  temperatures: [2, 4, 6, 8]
+  alphas: [0.3, 0.5, 0.7]
+  epochs: 20
+
+# TOST equivalence margin, in metric units (e.g. 0.05 = 5 percentage points
+# of accuracy/F1). Must be justified in the manuscript as the smallest
+# clinically/practically meaningful difference.
+equivalence_margin: 0.05
+
+# Denoising ablation (Reviewer A point 10): run student-KD training with
+# TV-Chambolle denoising disabled, same seeds, for comparison.
+run_denoise_ablation: true

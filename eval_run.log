@@ -1,0 +1,30 @@
+
+=== Table 1: Multi-seed classification performance ===
+                      accuracy            ...        f1          
+                          mean       std  ...      mean       std
+arm                                       ...                    
+student_baseline      0.827350  0.016440  ...  0.818782  0.021675
+student_kd            0.820513  0.015990  ...  0.809272  0.020352
+student_kd_nodenoise  0.813675  0.007151  ...  0.801150  0.011110
+teacher               0.835897  0.042478  ...  0.824061  0.056165
+
+[4 rows x 8 columns]
+
+=== Wilcoxon (teacher vs student_kd, F1) ===
+No statistically significant difference was detected (p=0.4375 >= 0.05). This does NOT establish equivalence; with n=5 paired seeds the minimum achievable p-value is 0.0312, so statistical power is limited. See TOST equivalence test for an equivalence claim.
+
+=== TOST equivalence (teacher vs student_kd, F1) ===
+Equivalence confirmed within margin [-0.05, 0.05] (TOST p=0.0498 < 0.05, mean diff=0.0148).
+
+=== Wilcoxon (student_baseline vs student_kd, F1) — isolates KD contribution ===
+No statistically significant difference was detected (p=0.6250 >= 0.05). This does NOT establish equivalence; with n=5 paired seeds the minimum achievable p-value is 0.0312, so statistical power is limited. See TOST equivalence test for an equivalence claim.
+
+=== Wilcoxon (student_kd_nodenoise vs student_kd, F1) — isolates denoising contribution ===
+No statistically significant difference was detected (p=0.4375 >= 0.05). This does NOT establish equivalence; with n=5 paired seeds the minimum achievable p-value is 0.0312, so statistical power is limited. See TOST equivalence test for an equivalence claim.
+
+=== Table 2: Efficiency ===
+                       model   params_M  inference_ms
+0        Teacher (ResNet-50)  23.514179      9.268473
+1  Student (MobileNetV3-Sm.)   1.520931      3.711220
+
+All outputs written to outputs/

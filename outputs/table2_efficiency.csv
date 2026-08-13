@@ -1,0 +1,3 @@
+model,params_M,inference_ms
+Teacher (ResNet-50),23.514179,9.268473141128197
+Student (MobileNetV3-Sm.),1.520931,3.7112203452529178

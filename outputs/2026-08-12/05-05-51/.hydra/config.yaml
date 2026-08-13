@@ -1,0 +1,24 @@
+data:
+  batch_size: 16
+  num_workers: 0
+train:
+  lr: 0.0001
+  weight_decay: 1.0e-05
+  scheduler_factor: 0.5
+  scheduler_patience: 5
+  max_epochs: 1
+  early_stop_patience: 1
+root_dir: raw
+checkpoint_dir: checkpoints_smoketest
+output_dir: outputs_smoketest
+split_seed: 42
+seeds:
+- 0
+grid_search:
+  temperatures:
+  - 4
+  alphas:
+  - 0.3
+  epochs: 1
+equivalence_margin: 0.05
+run_denoise_ablation: false

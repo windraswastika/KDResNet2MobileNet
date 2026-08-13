@@ -1,0 +1,9 @@
+- seeds=[0]
+- train.max_epochs=1
+- train.early_stop_patience=1
+- grid_search.temperatures=[4]
+- grid_search.alphas=[0.3]
+- grid_search.epochs=1
+- run_denoise_ablation=false
+- checkpoint_dir=checkpoints_smoketest
+- output_dir=outputs_smoketest

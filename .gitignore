@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Large / regenerable artifacts — not suitable for a normal git repo
+checkpoints/
+raw/
+raw_denoised/
+
+# macOS
+.DS_Store
+
+# Local agent/session state
+.claude/
+
+# Editors
+.vscode/
+.idea/
