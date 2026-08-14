@@ -1,0 +1,6 @@
+seed,teacher_f1,teacher_checkpoint,student_baseline_f1,student_baseline_checkpoint,student_kd_f1,student_kd_checkpoint,student_kd_nodenoise_f1,student_kd_nodenoise_checkpoint
+0,0.8110,teacher_seed0.pth,0.8386,student_baseline_seed0.pth,0.8053,student_kd_seed0.pth,0.7978,student_kd_nodenoise_seed0.pth
+1,0.8244,teacher_seed1.pth,0.8124,student_baseline_seed1.pth,0.8155,student_kd_seed1.pth,0.7992,student_kd_nodenoise_seed1.pth
+2,0.7380,teacher_seed2.pth,0.7941,student_baseline_seed2.pth,0.7759,student_kd_seed2.pth,0.8037,student_kd_nodenoise_seed2.pth
+3,0.8649,teacher_seed3.pth,0.8047,student_baseline_seed3.pth,0.8270,student_kd_seed3.pth,0.7872,student_kd_nodenoise_seed3.pth
+4,0.8821,teacher_seed4.pth,0.8441,student_baseline_seed4.pth,0.8226,student_kd_seed4.pth,0.8178,student_kd_nodenoise_seed4.pth
